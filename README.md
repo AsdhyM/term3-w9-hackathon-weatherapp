@@ -9,7 +9,7 @@
         - Current weather
         - Historical weather
         - Weather forecast
-`localhost:3000/search/{locationId}
+`localhost:3000/search/{locationId}`
     - Location lookup
     - Autocomplete
 
