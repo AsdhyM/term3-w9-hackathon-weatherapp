@@ -3,11 +3,14 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { ThemeContextProvider } from './contexts/ThemeContextProvider.jsx'
+import { WeatherInfoProvider } from './contexts/WeatherInfoProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeContextProvider>
-      <App />  
+      <WeatherInfoProvider>
+        <App />  
+      </WeatherInfoProvider>
     </ThemeContextProvider>
   </StrictMode>,
 )
